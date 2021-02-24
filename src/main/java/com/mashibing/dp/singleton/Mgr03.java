@@ -4,6 +4,9 @@ package com.mashibing.dp.singleton;
  * lazy loading
  * 也称懒汉式
  * 虽然达到了按需初始化的目的，但却带来线程不安全的问题
+ * 
+ * 例如：
+ *  两个线程几乎同时判断INSTANCE == null成立，导致两个线程都INSTANCE = new Mgr03()，产生不同的对象实例
  */
 public class Mgr03 {
     private static Mgr03 INSTANCE;

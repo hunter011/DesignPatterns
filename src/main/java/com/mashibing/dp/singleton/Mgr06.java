@@ -3,7 +3,6 @@ package com.mashibing.dp.singleton;
 /**
  * lazy loading
  * 也称懒汉式
- * 虽然达到了按需初始化的目的，但却带来线程不安全的问题
  * 可以通过synchronized解决，但也带来效率下降
  */
 public class Mgr06 {
